@@ -5,6 +5,7 @@
 * [Features](#features)
 * [Technologies](#technologies)
 * [Setup](#setup)
+* [To Do List](#to-do-list)
 
 ## General info
 This project was built from the Udemy course by Stephen Grider. Over time, this project will branch off from the course and reflect personal features. 
@@ -23,3 +24,5 @@ Project is created with:
 	
 ## Setup
 Coming soon!
+
+## To Do List
