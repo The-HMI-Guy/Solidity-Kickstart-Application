@@ -23,6 +23,7 @@ Project is created with:
 * Truffle Provider Version: 1.5.1
 	
 ## Setup
-Coming soon!
+1. Run the following install command.
+    - npm install next react react-dom
 
 ## To Do List
