@@ -1,7 +1,6 @@
-import { loadGetInitialProps } from 'next/dist/shared/lib/utils';
 import React from 'react';
 
-export default (props) => {
+const Layout = (props) => {
     return (
         <div>
             <h1>Im a header</h1>
@@ -10,3 +9,4 @@ export default (props) => {
         </div>
     );
 };
+export default Layout;
