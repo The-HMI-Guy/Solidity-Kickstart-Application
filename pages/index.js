@@ -33,7 +33,6 @@ class CampaignIndex extends Component {
                 content="Create Campaign"
                 icon="add circle"
                 primary
-
                  />
                   {this.renderCampaigns()}
                  </div>
