@@ -11,8 +11,8 @@ class CampaignNew extends Component {
   onSubmit = async (event) => {
     event.preventDefault();
     const accounts = await web3.eth.getAccounts();
-    await factory.methods.createCampaign(this.state.minimumContribution).sent({
-      from: accounts[0],
+    await factory.methods.createCampaign(this.state.minimumContribution).send({
+      from: accounts[0]
     });
   };
   render() {
