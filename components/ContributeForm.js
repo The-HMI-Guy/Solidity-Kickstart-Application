@@ -9,7 +9,7 @@ class ContributeForm extends Component {
   };
   onSubmit = async (event) => {
     event.preventDefault();
-    const campaign = Campaign(props.query.address);
+    const campaign = Campaign(this.props.address);
 
     try {
       const accounts = await web3.eth.getAccounts();
@@ -26,7 +26,7 @@ class ContributeForm extends Component {
           <label>Amount to Contribute</label>
           <Input
             value={this.state.value}
-            onChange={(event) => this.state({ value: event.target.value })}
+            onChange={(event) => this.setState({ value: event.target.value })}
             label="ether"
             labelPosition="right"
           />
