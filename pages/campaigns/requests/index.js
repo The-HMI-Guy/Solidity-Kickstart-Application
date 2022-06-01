@@ -13,7 +13,7 @@ class RequestIndex extends Component {
     const requestCount = await campaign.methods.getRequestsCounts().call();
 
     const requests = await Promise.all(
-      Array(requestCount)
+      Array(parseInt(requestCount))
         .fill()
         .map((elemment, index) => {
           return campaign.methods.requests(index).call();
