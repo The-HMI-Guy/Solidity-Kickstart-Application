@@ -16,6 +16,10 @@ class RequestNew extends Component {
     const { address } = props.query;
     return { address };
   }
+  onSubmit = async (event) => {
+    event.preventDefault();
+  };
+
   render() {
     return (
       <Layout>
