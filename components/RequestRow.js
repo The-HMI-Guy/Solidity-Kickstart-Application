@@ -24,7 +24,10 @@ class RequestRow extends Component {
     const { id, request, approversCount } = this.props;
     const readyToFinalize = request.approversCount > approversCount / 2;
     return (
-      <Row disabled={request.complete} positive={readyToFinalize && !request.complete}>
+      <Row
+        disabled={request.complete}
+        positive={readyToFinalize && !request.complete}
+      >
         <Cell>{id}</Cell>
         <Cell>{request.description}</Cell>
         <Cell>{web3.utils.fromWei(request.value, "ether")}</Cell>
